@@ -25,6 +25,13 @@ def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
++def FullOTA_InstallBegin(info):
+  input_zip = info.input_zip
+  data = input_zip.read("RADIO/dynamic-add-system_ext")
+  common.ZipWriteStr(info.output_zip, "dynamic-add-system_ext", data)
+  info.script.AppendExtra('update_dynamic_partitions(package_extract_file("dynamic-add-system_ext"));')
+  return
+
 def AddImage(info, basename, dest):
   name = basename
   data = info.input_zip.read("IMAGES/" + basename)
