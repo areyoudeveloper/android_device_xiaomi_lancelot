@@ -3,17 +3,6 @@ lib64/libaptXHD_encoder.so|01379a17d29c1bbc7f6b0325709940ca8cdd7ab8
 lib64/libaptX_encoder.so|fdbca5626fee8607d90bea2a6903eeebf396a7cf
 
 # MTK-IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
--framework/mediatek-ims-extension-plugin.jar
--framework/mediatek-ims-legacy.jar
--framework/mediatek-ims-wwop-common.jar
--priv-app/ImsService/ImsService.apk
 bin/vtservice
 etc/init/init.vtservice.rc
 lib/libcomutils.so
